@@ -10,9 +10,6 @@ export class MaincardComponent implements OnInit {
   name: string = "";
   quote1: string = "";
   new_quote: Quotes;
-  sample1: Quotes;
-  sample2: Quotes;
-  sample3: Quotes;
 
   quotes: Quotes[] = [
     (this.new_quote = new Quotes(

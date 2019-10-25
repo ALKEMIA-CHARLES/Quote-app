@@ -21,8 +21,9 @@
         <input [(ngModel)]="name" type="text" name="exampleFormControlText" class="form-control">
         <label for id="author">Author</label>
         <input [(ngModel)]="Author" type="text" name="exampleFormControlText" class="form-control">
-        <label for="exampleFormControlTextarea1">Quote</label>
+        <label for id="quote">Quote</label>
         <textarea [(ngModel)]="quote1" class="form-control" name="exampleFormControlTextarea1" rows="3"></textarea>
+        <br>
         <button class="btn btn-primary" type="submit" (click)="postQuote()">Submit</button>
       </div>
     </form>

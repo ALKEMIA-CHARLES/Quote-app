@@ -1,5 +1,6 @@
 .card-body{
     background-color: darkkhaki;
+    border: solid 4px white;
 }
 
 .card-header{
@@ -11,5 +12,9 @@
 }
 
 #author{
+    color: white;
+}
+
+#quote{
     color: white;
 }
