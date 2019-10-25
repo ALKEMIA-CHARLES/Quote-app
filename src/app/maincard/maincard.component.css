@@ -1,37 +1,38 @@
-.card-body{
-    background-color: darkkhaki;
-    border: solid 4px white;
-    font-family: 'Caveat',
+.card-body {
+  background-color: darkkhaki;
+  border: solid 4px white;
+  font-family: 'Caveat',
     cursive;
-    font-size: 25px;
+  font-size: 25px;
 }
 
-.card-header{
-    color: white;
-     font-family: 'Caveat',
-     cursive;
-     font-size: 30px;
+.card-header {
+  color: white;
+  font-family: 'Caveat',
+    cursive;
+  font-size: 30px;
 }
 
-#name{
-    color: white;
-     font-family: 'Caveat',
-     cursive;
-     padding-top: 37px;
-     font-size: 30px;
+#name {
+  color: white;
+  font-family: 'Caveat',
+    cursive;
+  padding-top: 37px;
+  font-size: 30px;
 }
 
-#author{
-    color: white;
-     font-family: 'Caveat',
-     cursive;
-     padding-top: 37px;
-     font-size: 30px;
+#author {
+  color: white;
+  font-family: 'Caveat',
+    cursive;
+  padding-top: 37px;
+  font-size: 30px;
 }
 
-#quote{
-    color: white;
-     font-family: 'Caveat',
-     cursive;
-     padding-top: 37px;
+#quote {
+  color: white;
+  font-family: 'Caveat',
+    cursive;
+  padding-top: 37px;
+  font-size: 30px;
 }
