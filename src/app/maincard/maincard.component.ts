@@ -17,7 +17,11 @@ export class MaincardComponent implements OnInit {
     new Quotes(
       "Beatrice Labelle",
       "Vous devez vous convaincre que vous êtes le passé, le présent et le futur"
-    )
+    ),
+    new Quotes ("Michael Jackson", "Heal the world"),
+    new Quotes ("Michael Jordan","form is temporary, class is permanent" ),
+    new Quotes ("Steve Jobs", "Let's change the World"),
+    new Quotes ("Pablo Escobar", "Plata O Plomo")
   ];
 
   postQuote() {
