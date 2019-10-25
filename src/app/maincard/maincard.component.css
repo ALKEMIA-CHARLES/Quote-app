@@ -1,21 +1,32 @@
 .card-body{
     background-color: darkkhaki;
     border: solid 4px white;
+    font-family: 'Caveat',
+    cursive;
+    font-size: 25px;
 }
 
 .card-header{
     color: white;
+     font-family: 'Caveat',
+     cursive;
+     font-size: 30px;
 }
 
 #name{
     color: white;
-    
+     font-family: 'Caveat',
+     cursive;
 }
 
 #author{
     color: white;
+     font-family: 'Caveat',
+     cursive;
 }
 
 #quote{
     color: white;
+     font-family: 'Caveat',
+     cursive;
 }
