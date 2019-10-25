@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="card1">
+    <h5 class="card-header">Quotes</h5>
+    <div class="card-body">
+      <ul>
+        <li *ngFor='let quote of quotes'>{{quote.name}}: {{quote.quote}}</li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
+    <form>
+      <div class="form-group">
+        <label for="exampleFormControlText">Name</label>
+        <input [(ngModel)]="name" type="text" name="exampleFormControlText" class="form-control">
+        <label for="exampleFormControlTextarea1">Quote</label>
+        <textarea [(ngModel)]="quote1" class="form-control" name="exampleFormControlTextarea1" rows="3"></textarea>
+        <button class="btn btn-primary" type="submit" (click)="postQuote()">Submit</button>
+      </div>
+    </form>
+  </div>
