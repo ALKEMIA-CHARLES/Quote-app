@@ -1,6 +1,9 @@
 # Q0UTEONQUOTES
 QUOTEONQUOTES is a web application developed by angular JS  framework that posts popular quotes of famous people and normal people alike with the added option of liking/unliking the quotes. The quote with the highest amount of likes gets to be highlighted a certain color.
 
+## Installation
+No installation needed.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.12.
 
 ## Development server
