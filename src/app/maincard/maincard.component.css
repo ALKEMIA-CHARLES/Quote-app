@@ -1,3 +1,11 @@
-.cardbody{
-    overflow:auto;
+.card-body{
+    background-color: darkkhaki;
+}
+
+.card-header{
+    color: white;
+}
+
+#name{
+    color: white;
 }

@@ -3,7 +3,12 @@
     <h5 class="card-header">Quotes</h5>
     <div class="card-body">
       <ul>
-        <li *ngFor='let quote of quotes'>{{quote.name}}: {{quote.quote}}</li>
+        <li *ngFor='let quote of quotes;let i=index'>{{quote.name}}: {{quote.quote}}
+          <div style="float: right;">
+            <span>{{quote.upvote}}<i class="fas fa-thumbs-up" (click)="like(i)"> </i></span>
+            <span>{{quote.downvote}}<i class="fas fa-thumbs-down" (click)="unlike(i)"></i></span>
+          </div>
+        </li>
       </ul>
     </div>
   </div>
@@ -12,7 +17,7 @@
   <div class="container-fluid">
     <form>
       <div class="form-group">
-        <label for="exampleFormControlText">Name</label>
+        <label for id="name">Name</label>
         <input [(ngModel)]="name" type="text" name="exampleFormControlText" class="form-control">
         <label for="exampleFormControlText">Author</label>
         <input [(ngModel)]="Author" type="text" name="exampleFormControlText" class="form-control">

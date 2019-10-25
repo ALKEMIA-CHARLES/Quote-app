@@ -9,28 +9,43 @@ import { Quotes } from "../quotes";
 export class MaincardComponent implements OnInit {
   name: string = "";
   quote1: string = "";
+  new_quote: Quotes;
+  sample1: Quotes;
+  sample2: Quotes;
+  sample3: Quotes;
 
   quotes: Quotes[] = [
-    new Quotes("Charles Mtawali Jr", "Do what inspires you "),
-    new Quotes("Abel Mohamed", "ሁልጊዜ አዎንታዊ ለመሆን ሁልጊዜ ያስታውሱ"),
-    new Quotes("Liang Hao", "成为您遇到的每个人的尽头"),
-    new Quotes(
-      "Beatrice Labelle",
-      "Vous devez vous convaincre que vous êtes le passé, le présent et le futur"
-    ),
-    new Quotes ("Michael Jackson", "Heal the world"),
-    new Quotes ("Michael Jordan","form is temporary, class is permanent" ),
-    new Quotes ("Steve Jobs", "Let's change the World"),
-    new Quotes ("Pablo Escobar", "Plata O Plomo")
+    (this.new_quote = new Quotes(
+      "Charles Mtawali Jr",
+      "Do what inspires you ",
+      0,
+      0,
+    )),
+    (this.new_quote = new Quotes(
+      "Abel Mohamed", "ሁልጊዜ አዎንታዊ ለመሆን ሁልጊዜ ያስታውሱ", 0, 0
+    )),
+    (this.new_quote = new Quotes("Liang Hao", "成为您遇到的每个人的尽头", 0, 0)),
+    (this.new_quote = new Quotes("Beatrice Labelle", "Vous devez vous convaincre que vous êtes le passé, le présent et le futur", 0,0)),
+    (this.new_quote = new Quotes("Michael Jackson", "Heal the world", 0, 0)),
+    (this.new_quote = new Quotes("Michael Jordan", "form is temporary, class is permanent", 0, 0)),
+    (this.new_quote = new Quotes("Steve Jobs", "Let's change the World", 0, 0)),
+    (this.new_quote = new Quotes("Pablo Escobar", "Plata O Plomo", 0, 0))
   ];
 
   postQuote() {
-    let new_quote = new Quotes(this.name, this.quote1);
+    this.new_quote = new Quotes(this.name, this.quote1, 0, 0);
     this.name = "";
     this.quote1 = "";
-    this.quotes.push(new_quote);
+    this.quotes.push(this.new_quote);
   }
 
+  unlike(index) {
+    this.quotes[index].downvote += 1;
+  }
+
+  like(index) {
+    this.quotes[index].upvote += 1;
+  }
   constructor() {}
 
   ngOnInit() {}
