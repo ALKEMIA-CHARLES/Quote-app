@@ -1,4 +1,4 @@
-# Q0UTE ONQUOTES
+# Q0UTE ON QUOTES
 QUOTEONQUOTES is a web application developed by angular JS  framework that posts popular quotes of famous people and normal people alike with the added option of liking/unliking the quotes. The quote with the highest amount of likes gets to be highlighted a certain color. A delete button is also available in case a user does not like the ilk of a particular quote.
 
 In the application, the user will also be able to post a quote if he/she wishes to do so. After the quote has been posted, he/she will be able to delete the quote they have posted or continue posting other ones or even just delete other ones that are not his/hers.
