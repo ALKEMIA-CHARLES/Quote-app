@@ -7,6 +7,7 @@
           <div style="float: right;">
             <span>{{quote.upvote}}<i class="fas fa-thumbs-up" (click)="like(i)"> </i></span>
             <span>{{quote.downvote}}<i class="fas fa-thumbs-down" (click)="unlike(i)"></i></span>
+            <span><i class="fas fa-trash" (click)="delete(i)"></i></span>
           </div>
         </li>
       </ul>
