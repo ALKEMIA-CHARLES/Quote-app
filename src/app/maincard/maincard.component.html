@@ -9,6 +9,8 @@
             <span>{{quote.downvote}}<i class="fas fa-thumbs-down" (click)="unlike(i)"></i></span>
             <span><i class="fas fa-trash" (click)="delete(i)"></i></span>
           </div>
+            <p>This quote was posted on {{quote.completeDate|dateCount }} days ago</p>
+          
         </li>
       </ul>
     </div>
