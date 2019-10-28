@@ -8,7 +8,7 @@ No installation needed.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.12.
 
-## Technologies
+## Technologies used
 The technolgies used for this project are:
 HTML
 CSS
